@@ -6,34 +6,89 @@
     <title>Emergency Hotline</title>
     <!-- Tailwind CSS -->
     <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+    <!-- Font awesome -->
+     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.0/css/all.min.css" integrity="sha512-DxV+EoADOkOygM4IR9yXP8Sb2qwgidEmeqAEmDKIOfPRQZOWbXCzLC6vjbZyy0vPisbH2SyW27+ddLVCN+OMzQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+     <!-- Daisyui -->
+      <link href="https://cdn.jsdelivr.net/npm/daisyui@5" rel="stylesheet" type="text/css" />
+      <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
   </head>
   <body class="bg-gray-100 min-h-screen">
-
     <header class="bg-white">
-      <nav class="w-11/12 mx-auto flex flex-col sm:flex-row justify-between items-center py-3 gap-3">
+      <nav
+        class="w-11/12 mx-auto flex flex-col sm:flex-row justify-between items-center py-3 gap-3"
+      >
         <div class="flex items-center gap-4">
-          <img src="./assets/logo.png" alt="Emergency Hotline Logo" class="w-11">
-          <p class="text-lg sm:text-xl font-bold text-[#006747]">Emergency <br> Service</p>
+          <img
+            src="./assets/logo.png"
+            alt="Emergency Hotline Logo"
+            class="w-11"
+          />
+          <p class="text-lg sm:text-xl font-bold text-[#006747]">
+            Emergency <br />
+            Service
+          </p>
         </div>
         <div class="flex items-center gap-4">
-          <div class="heart flex items-center gap-2 bg-[#41FF6B]/10 rounded-full px-5 py-2">
+          <div
+            class="heart flex items-center gap-2 bg-[#41FF6B]/10 rounded-full px-5 py-2"
+          >
             <span class="font-bold">0</span>
-            <img src="./assets/heart.png" alt="" class="w-4 h-4">
+            <img src="./assets/heart.png" alt="" class="w-4 h-4" />
           </div>
-          <div class="heart flex items-center gap-2 bg-[#41FF6B]/10 rounded-full px-5 py-2">
+          <div
+            class="heart flex items-center gap-2 bg-[#41FF6B]/10 rounded-full px-5 py-2"
+          >
             <span class="font-bold">100</span>
-            <img src="./assets/coin.png" alt="" class="w-4 h-4">
+            <img src="./assets/coin.png" alt="" class="w-4 h-4" />
           </div>
-          <div class="heart flex items-center gap-2 bg-[#00A63E] rounded-full px-5 py-2">
+          <div
+            class="heart flex items-center gap-2 bg-[#00A63E] rounded-full px-5 py-2"
+          >
             <span class="font-bold text-white">Copy</span>
           </div>
         </div>
       </nav>
     </header>
 
-    <main class=>
-      
+    <main>
+      <!-- Banner section -->
+      <section id="banner">
+        <div
+        class="banner bg-gradient-to-r from-green-900 via-green-700 to-green-900 h-64 w-full sm:h-72 md:h-80"
+      >
+        <div
+          class="flex flex-col justify-center items-center h-full w-11/12 mx-auto text-center"
+        >
+          <img src="./assets/logo-dark.png" alt="" class="w-16 sm:w-20 md:w-24 mx-auto" />
+          <h1 class="text-white font-bold text-2xl sm:text-3xl md:text-4xl lg:text-5xl mt-2 sm:mt-3 md:mt-4">
+            Emergency Service Directory
+          </h1>
+          <p class="text-white">
+            Government Emergency Services at Your Fingertip – A Project by
+            Government of the People’s Republic of Bangladesh
+          </p>
+        </div>
+      </div>
+      </section>
+      <!-- Emergency service section-->
+      <section id="emergency" class="grid grid-cols-2 sm:grid-cols-3 gap-4 mt-10">
+        <div class="bg-white rounded-lg shadow-md p-4">
+          <div class="icons flex justify-between items-center">
+            <img src="./assets/emergency.png" alt="" class="w-10 h-10" />
+            <button class="heart-btn"><i class="fa-regular fa-heart"></i></button>
+          </div>
+          <div>
+            <h3 class="font-bold text-lg mt-5">National Emergency Number</h3>
+            <p>National Emergency</p>
+            <span class="font-bold text-2xl mt-">999</span> <br>
+            <span class="bg-gray-200 rounded-full px-3 py-1">All</span>
+          </div>
+          <div class="flex gap-2 mt-3">
+            <button class="btn  text-grey-500  flex-1 py-1 rounded-lg"> <i class="fa-regular fa-copy"></i>Copy</button>
+            <button class="btn bg-green-500 text-white  flex-1 py-1 rounded-lg"> <i class="fa-solid fa-phone"></i>Call</button>
+          </div>
+        </div>
+      </section>
     </main>
-
   </body>
 </html>
